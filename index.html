@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Responsive: makes the page look good on phones (important for QR code scans) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!-- PAGE TITLE & SOCIAL PREVIEW — edit the text here if you like  -->
+  <!-- ============================================================= -->
+  <title>BreezyBuddy — Creative nudges for better focus</title>
+  <meta name="description" content="BreezyBuddy gives funny, surprising, context-aware nudges that help neurodivergent students refocus — not just another app blocker." />
+
+  <!-- Social share preview (used when the link is shared on chat/socials) -->
+  <meta property="og:title" content="BreezyBuddy — Creative nudges for better focus" />
+  <meta property="og:description" content="Not just blocking apps — helping your mind come back." />
+  <meta property="og:type" content="website" />
+
+  <!-- Emoji favicon (cloud) so you don't need an icon file -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Decorative floating clouds in the background (pure CSS, no images) -->
+  <div class="bg-clouds" aria-hidden="true">
+    <span class="cloud cloud-a"></span>
+    <span class="cloud cloud-b"></span>
+    <span class="cloud cloud-c"></span>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand-logo" aria-hidden="true">☁️</span>
+      <span class="brand-name">BreezyBuddy</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#collab">Collaborate</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= 1. HERO ================= -->
+    <section class="hero">
+      <div class="hero-text">
+        <!-- EDIT: Hero title / subtitle / line -->
+        <h1>BreezyBuddy</h1>
+        <p class="subtitle">Creative nudges for better focus.</p>
+        <p class="tagline">Not just blocking apps — helping your mind come back.</p>
+
+        <!-- HERO CTA BUTTONS (jump to contact section / collaborators section) -->
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact me</a>
+          <a href="#collab" class="btn btn-ghost">Join as test user</a>
+        </div>
+      </div>
+
+      <!-- ===== MASCOT ===== -->
+      <!-- To use your own mascot: drop an image at  assets/mascot.png  -->
+      <!-- It will appear automatically. Until then, the cute CSS/SVG    -->
+      <!-- cloud below is shown as a placeholder.                        -->
+      <div class="hero-mascot">
+        <!-- The <img> hides itself if assets/mascot.png is missing,
+             revealing the SVG cloud placeholder underneath. -->
+        <img
+          src="assets/mascot.png"
+          alt="BreezyBuddy cloud mascot"
+          class="mascot-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+
+        <!-- CSS/SVG placeholder mascot: a smiling cloud with a teal scarf -->
+        <svg class="mascot-svg" viewBox="0 0 240 220" role="img" aria-label="Smiling cloud mascot with a teal scarf" style="display:none;">
+          <!-- soft shadow under the cloud -->
+          <ellipse cx="120" cy="200" rx="70" ry="12" fill="#0E9F9A" opacity="0.12" />
+          <!-- cloud body -->
+          <g>
+            <circle cx="80" cy="110" r="42" fill="#ffffff" />
+            <circle cx="120" cy="90" r="52" fill="#ffffff" />
+            <circle cx="165" cy="115" r="40" fill="#ffffff" />
+            <rect x="62" y="108" width="120" height="46" rx="23" fill="#ffffff" />
+          </g>
+          <!-- teal scarf -->
+          <path d="M70 150 Q120 172 172 150 L172 164 Q120 186 70 164 Z" fill="#0E9F9A" />
+          <path d="M150 162 q14 6 16 26 l-16 -4 z" fill="#0B8C88" />
+          <!-- eyes -->
+          <circle cx="104" cy="104" r="6" fill="#0B1F3A" />
+          <circle cx="146" cy="104" r="6" fill="#0B1F3A" />
+          <!-- rosy cheeks -->
+          <circle cx="92" cy="120" r="7" fill="#BDEBFF" />
+          <circle cx="158" cy="120" r="7" fill="#BDEBFF" />
+          <!-- smile -->
+          <path d="M108 122 Q125 138 142 122" stroke="#0B1F3A" stroke-width="4" fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= 2. PROBLEM ================= -->
+    <section class="section problem">
+      <h2>The app may be closed. The distraction is not.</h2>
+      <ul class="problem-points">
+        <li><span class="dot">💭</span> Notifications and scrolling can stay in our thoughts.</li>
+        <li><span class="dot">🚫</span> Simple blockers do not rebuild focus.</li>
+        <li><span class="dot">💙</span> Neurodivergent students may need kinder, more creative support.</li>
+      </ul>
+    </section>
+
+    <!-- ================= 3. HOW IT WORKS ================= -->
+    <section id="how" class="section">
+      <h2 class="section-title">How it works</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Set your priority</h3>
+          <p>Enter a topic, task, or upload study material.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌦️</div>
+          <h3>Understands context</h3>
+          <p>Uses privacy-friendly signals like weather, time, and focus state.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✨</div>
+          <h3>Creative nudge</h3>
+          <p>Gives funny, surprising reminders that redirect attention.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 4. EXAMPLE ================= -->
+    <section class="section example">
+      <h2 class="section-title">A nudge in action</h2>
+      <!-- Example notification card (looks like a phone notification) -->
+      <div class="notification">
+        <div class="notif-head">
+          <span class="notif-logo" aria-hidden="true">☁️</span>
+          <span class="notif-app">BreezyBuddy</span>
+          <span class="notif-time">now</span>
+        </div>
+        <p class="notif-body">“Rain = condensation. Free thermodynamics outside.”</p>
+      </div>
+      <p class="example-caption">A reminder that connects your study topic to your real world.</p>
+    </section>
+
+    <!-- ================= 5. COLLABORATORS ================= -->
+    <section id="collab" class="section collab">
+      <h2 class="section-title">Looking for collaborators &amp; test users</h2>
+      <p class="collab-text">
+        I’m bootstrapping BreezyBuddy and looking for people who want to test,
+        give feedback, or help build it.
+      </p>
+      <div class="tags">
+        <span class="tag">Test users</span>
+        <span class="tag">Developers / designers</span>
+        <span class="tag">Neurodivergent students</span>
+      </div>
+    </section>
+
+    <!-- ================= 6. CONTACT ================= -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Let’s connect</h2>
+      <p class="contact-text">Want to test, collaborate, or just say hi?</p>
+
+      <!-- ===================================================== -->
+      <!-- EDIT YOUR LINKS HERE                                   -->
+      <!--   LinkedIn  -> href below                              -->
+      <!--   GitHub    -> href below                              -->
+      <!--   Email     -> change the address after "mailto:"      -->
+      <!-- ===================================================== -->
+      <div class="contact-buttons">
+        <a class="btn btn-contact" href="https://www.linkedin.com/in/sasimatic" target="_blank" rel="noopener">
+          <span aria-hidden="true">in</span> LinkedIn
+        </a>
+        <a class="btn btn-contact" href="https://github.com/sasilab" target="_blank" rel="noopener">
+          <span aria-hidden="true">⌨</span> GitHub
+        </a>
+        <a class="btn btn-contact" href="mailto:sas1924s@hs-coburg.de">
+          <span aria-hidden="true">✉</span> Email
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>☁️ BreezyBuddy — Creative nudges for better focus.</p>
+    <p class="footer-small">Built as an early pitch. Thanks for scanning! 💙</p>
+  </footer>
+
+  <!-- Minimal JS: smooth scroll + small entrance animations -->
+  <script src="script.js"></script>
+</body>
+</html>
